@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.1"
 
     defaultConfig {
-        applicationId "com.example.cse8246.visio_sound1"
+        applicationId "com.example.cse8246.visio_sound"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1

@@ -28,7 +28,7 @@ public class VisioAudioRecorder {
     static boolean mStartRecording;
 
     private int bufferSize = 0;
-    private static final int RECORDER_SAMPLERATE = 22050;
+    private static final int RECORDER_SAMPLERATE = 24000;
     private static final int RECORDER_CHANNELS = AudioFormat.CHANNEL_IN_STEREO;
     private static final int RECORDER_AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT;
     private Thread recordingThread = null;
@@ -175,7 +175,7 @@ public class VisioAudioRecorder {
     {
         MediaPlayer m = new MediaPlayer();
         try {
-            m.setDataSource(path+'/'+AUDIO_RECORDER_FOLDER+'/'+file);
+            m.setDataSource(path+'/'+AUDIO_RECORDER_FOLDER+'/'+file + ".wav");
         } catch (IOException e) {
             e.printStackTrace();
         }
